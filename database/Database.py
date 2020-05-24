@@ -39,8 +39,10 @@ class Database:
         :param param: название поля таблицы.
         """
         data_request = """SELECT %s FROM records_database """ % param
+        data = []
         for row in self.connection.cursor().execute(data_request):
-            print(row)
+            data.append(row)
+        return data
 
     def data_request_where(self, parameter, parameter2, value):
         """
