@@ -15,4 +15,9 @@ class CalculatorPFC:
 
     @staticmethod
     def bread_unit(carbohydrates):
+        """
+        Расчет ХЕ
+        :param carbohydrates: кол-во углеводов
+        :return: кол-во хлебных
+        """
         return carbohydrates / 12
